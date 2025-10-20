@@ -1,0 +1,29 @@
+/* CSS */
+
+.navbar {
+    background-color: blanchedalmond;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar li {
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+.navbar a {
+    display: block;
+    color: rgb(136, 0, 0);
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s; 
+}
+
+.navbar a:hover {
+    background-color: bisque;
+}

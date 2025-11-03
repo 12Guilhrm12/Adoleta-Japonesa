@@ -1,29 +1,70 @@
-/* CSS */
-
-.navbar {
-    background-color: blanchedalmond;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
 }
 
-.navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
+.menuLogo {
+  justify-content: left;
+  width: 20rem;
+  height: 20rem;
 }
 
-.navbar li {
-    margin: 0 15px;
-    font-size: 1em;
+.menu {
+  background-color: #000000;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: padding 0.5s ease, color 0.3s ease;
 }
 
-.navbar a {
-    display: block;
-    color: rgb(136, 0, 0);
-    text-decoration: none;
-    padding: 15px 20px;
-    transition: background-color 0.3s; 
+.menu::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url(images/fundoMenu1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease;
+  z-index: 0;
 }
 
-.navbar a:hover {
-    background-color: bisque;
+.menu:hover {
+  color: #000000;
+}
+
+.menu:hover::before {
+  opacity: 1;
+}
+
+.menu * {
+  position: relative;
+  z-index: 1;
+  transition: color 1s ease;
+}
+
+.menuLink { 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: #000000;
+  color: white;
+  width: 10rem;
+  height: 3.5rem;
+  margin: 2rem;
+  font-size: 1.4rem;
+  font-style: bold;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menuLink:hover {
+  background-color: #2f2f2f;
+  transform: scale(1.2);
 }

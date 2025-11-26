@@ -1,21 +1,40 @@
+@font-face {
+  font-family: 'Okashi';
+  src: url(fontes/Okashi.ttf);
+}
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-size: cover;
   margin: 0;
+  background-color: rgb(88, 64, 44);
 }
 
 .menuLogo {
   justify-content: left;
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.menuBack {
+  background: linear-gradient(0deg,rgb(88, 64, 44) 0%, rgba(0, 0, 0, 1) 100%);
+  height: 25rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: white;
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 2rem;
+  font-family: 'Okashi';
 }
 
 .menu {
+  padding: 3rem;
   background-color: #000000;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  font-family: 'Okashi', serif;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   transition: padding 0.5s ease, color 0.3s ease;
 }
@@ -24,7 +43,7 @@ body {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url(images/fundoMenu1.jpg);
+  background-image: url(images/fundoMenu3.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -47,6 +66,29 @@ body {
   transition: color 1s ease;
 }
 
+.menuLinkA {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  background-color: rgb(65, 47, 32);
+  color: white;
+  width: 10rem;
+  height: 3.5rem;
+  margin: 2rem;
+  font-size: 1.4rem;
+  font-style: bold;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menuLinkA:hover {
+  background-color: rgb(65, 47, 32);
+  transform: scale(1.2);
+}
+
+
 .menuLink { 
   justify-content: center;
   align-items: center;
@@ -65,6 +107,161 @@ body {
 }
 
 .menuLink:hover {
-  background-color: #2f2f2f;
+  background-color: rgb(65, 47, 32);
   transform: scale(1.2);
+}
+
+footer {
+background-color: rgb(73, 53, 37);
+color: white;
+text-align: center;
+padding: 40px 20px;
+font-family: Arial, sans-serif;
+}
+
+
+.rodapeLogo {
+width: 80px;
+margin-bottom: 15px;
+}
+
+
+.rodapeTitle {
+font-size: 24px;
+letter-spacing: 2px;
+margin: 0;
+}
+
+
+.rodapeSub {
+font-size: 16px;
+margin: 5px 0 20px;
+}
+
+
+.rodapeSocial {
+margin-top: 20px;
+font-size: 14px;
+}
+
+
+.icons {
+margin-top: 10px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+.icon {
+width: 32px;
+height: 32px;
+}
+
+.delicinha {
+  border: 1px;
+  border-radius: 30px;
+}
+
+.menuFoodGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+  row-gap: 2rem;
+  width: 70rem;
+  margin: auto;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #91793e;
+  border-radius: 16px;
+  padding: 1rem;
+  height: 10rem;
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  text-decoration: none; 
+  color: #2c2929; 
+  transition: transform 0.4s ease, box-shadow 0.4s, background-color 0.4s, height 0.4s ease; 
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  height: 13rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #a88d49;
+}
+
+.menu-item .info,
+.menu-item img {
+  transition: transform 0.4s; 
+}
+
+.menu-item:hover .info,
+.menu-item:hover img {
+  transform: translateY(-3.5rem);
+}
+
+.menu-item .desc {
+  position: absolute;
+  top: 6.5rem;
+  left: 1rem;
+  right: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s, transform 0.4s;
+  font-size: 1.1rem;
+  color: #2c2929;
+}
+
+.menu-item:hover .desc {
+  opacity: 1;
+  
+}
+
+.info {
+  flex: 1;
+  padding-right: 10px;
+  transform: translateY(0);
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.rating {
+  margin-top: 6px;
+  margin-bottom: 1rem;
+  color: #f4b400;
+  font-size: 16px;
+}
+
+.menu-item img {
+  width: 95px;
+  height: 95px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.imgFood {
+  border: 1px;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.text {
+  margin-top: 3rem;
+  font-family: 'Okashi';
+  text-align: center;
+  color: white;
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 2rem;
 }

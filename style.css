@@ -361,3 +361,15 @@
   margin-top: 2rem;
   height: 16rem;
 }
+.ingredients {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;          
+  font-family: 'Okashi', serif;
+  font-size: 1.4rem;
+}
+
+.ingredientsP {
+  color: white;                      
+  text-align: justify;       
+}

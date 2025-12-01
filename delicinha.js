@@ -21,7 +21,7 @@ function getRandomInt(min, max) {
 }
 
 function getDishes(dish) {
-    return `../pratos/prato${dish + 1}.html`
+    return `/pratos/prato${dish + 1}.html`;
 }
 
 function delicinha() {

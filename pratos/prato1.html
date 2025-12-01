@@ -23,10 +23,10 @@
     <p class="text"><b>Descrição:<i> Macarrão oriental com legumes frescos e molho especial.</i></b></p>
     <div class="rating2">★★★★★</div>
     <div class="bttBuyQ">
-      <button class="btt">+</button>
-      <button class="btt">-</button>
-      <p id="numA">0</p>
-      <button class="bttC">Comprar</button>
+      <button class="btt" onclick="add_mount()">  +</button>
+      <button class="btt" onclick="minus_mount()"> -</button>
+      <p><span id="numA">0</span></p>
+      <button class="bttC" onclick="buy()">Comprar</button>
     </div>
     <div class="ingredients">
       <p class="ingredientsP">
@@ -42,8 +42,10 @@
     <img src="../images/whatsapp.png" class="icon">
     <img src="../images/instagram.png" class="icon">
     <img src="../images/facebook.png" class="icon">
+    <audio id="ding" src="../sfx/ding.mp3" preload="auto"></audio>
     </div>
     </footer>
-    <script src="../delicinha.js"></script>
+    <script src="../scripts/delicinha.js"></script>
+    <script src="../scripts/order.js"></script>
   </body>
 </html>

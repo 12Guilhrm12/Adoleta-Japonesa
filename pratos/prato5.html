@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="imagex/png" href="images/1-e999861a.ico">
+    <title>TokioTable</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <img src="../images/logoTokio.png" class="menuLogo">
+      <a href="../index.html" class="menuLinkA">Quem somos</a>
+      <a href="../menu.html" class="menuLink">Cardápio</a>
+      <a onclick="delicinha()" class="menuLink">Delicinha</a>
+      <a href="../contato.html" class="menuLink">Contato</a>
+    </nav>
+    <div class="menuBack">
+    <h1 class="titleDois">Sushi Simples</h1>
+    <center><img src="../images/yakisoba.png" class="imgFood"></center>
+    </div>
+    <br><br><br><br><br><br><br>
+    <p class="text"><b>Descrição:<i> Macarrão oriental com legumes frescos e molho especial.</i></b></p>
+    <div class="rating2">★★★★★</div>
+    <div class="bttBuyQ">
+      <button class="btt" onclick="add_mount()">  +</button>
+      <button class="btt" onclick="minus_mount()"> -</button>
+      <p><span id="numA">0</span></p>
+      <button class="bttC" onclick="buy()">Comprar</button>
+    </div>
+    <div class="ingredients">
+      <p class="ingredientsP">
+        
+      </p>
+    </div>
+    <footer>
+    <img src="../images/logoTokio.png" class="rodapeLogo">
+    <h2 class="rodapeTitle">TokioTable</h2>
+    <p class="rodapeSub">Restaurante Japonês</p>
+    <p class="rodapeSocial">Siga-nos nas redes sociais:</p>
+    <div class="icons">
+    <img src="../images/whatsapp.png" class="icon">
+    <img src="../images/instagram.png" class="icon">
+    <img src="../images/facebook.png" class="icon">
+    <audio id="ding" src="../sfx/ding.mp3" preload="auto"></audio>
+    </div>
+    </footer>
+    <script src="../scripts/delicinha.js"></script>
+    <script src="../scripts/order.js"></script>
+  </body>
+</html>
